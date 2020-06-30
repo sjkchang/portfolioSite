@@ -1,0 +1,8 @@
+{% extends "portfolio/portfolio-base.html" %}
+
+{% block content %}
+  {% for post in posts %}
+    <h1>Name: {{  post.name }}</h1>
+    <h2>Age: {{ post.age }}</h2>
+  {% endfor %}
+{% endblock content %}
