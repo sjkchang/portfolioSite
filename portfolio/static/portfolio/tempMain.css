@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overscroll-behavior: none;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.nav ul{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+}
+
+.nav li{
+    display: inline;
+    float: left;
+}
+
+.nav li a {
+  display: block;
+  color: #d3d3d3;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: white;
+  background-color: #111
+}
+
+
+content{
+    padding:20px;
+    margin-top:30px;
+    background-color:#1abc9c;
+    height:1500px;"
+}

@@ -11,9 +11,9 @@
 
 
     {% if title %}
-      <title>Django Portfolio - {{title}}</title>
+      <title>Portfolio - {{title}}</title>
     {% else %}
-      <title>Django Portfolio</title>
+      <title>Portfolio</title>
     {% endif %}
   </head>
 
@@ -28,12 +28,13 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'portfolio-home' %}">Home</a>
+              <a class="nav-item nav-link" href="{% url 'portfolio-projects' %}">Projects</a>
+              <a class="nav-item nav-link" href="{% url 'portfolio-resume' %}">Resume</a>
               <a class="nav-item nav-link" href="{% url 'portfolio-about' %}">About</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              <a class="nav-item nav-link" href="#">Login</a>
-              <a class="nav-item nav-link" href="#">Register</a>
+                <a class="nav-item nav-link" href="{% url 'portfolio-contact' %}">Contact Me</a>
             </div>
           </div>
         </div>
