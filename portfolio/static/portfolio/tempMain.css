@@ -7,18 +7,31 @@ html, body {
     overscroll-behavior: none;
 }
 
+body{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size:16px;
+    font-weight:normal;
+
+    background-image: url(P1130937.jpeg);
+    height: 100rem
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
 .nav {
-    position: fixed;
+    font-size: 1.4em;
     top: 0;
     width: 100%
 }
 
 .nav ul{
      list-style-type: none;
-     margin: 0;
+     margin: 1rem;
      padding: 0;
      overflow: hidden;
-     background-color: #333;
+     border-bottom: solid white 1px;
 }
 
 .nav li{
@@ -28,21 +41,39 @@ html, body {
 
 .nav li a {
   display: block;
-  color: #d3d3d3;
+  color: white;
   text-align: center;
-  padding: 18px 20px;
+  padding: 1.4rem;
   text-decoration: none;
 }
 
 .nav li a:hover {
-  color: white;
-  background-color: #111
+  color: #ede68a;
 }
 
+#nav_right{
+    float: right;
+    display: inline;
+}
 
-content{
-    padding:20px;
+#nav_right a{
+    color: #b0a565;
+}
+
+#nav_right a:hover{
+    color: #ede68a;
+}
+
+.content{
+    padding:30px;
     margin-top:30px;
-    background-color:#1abc9c;
-    height:1500px;"
+    color: white;
+    font-size: 2.4em;
+    max-height: 550px;
+    min-height: 550px;
+}
+
+.footer{
+    background: #c49000;
+    height: 50px;
 }
