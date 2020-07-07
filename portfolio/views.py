@@ -13,7 +13,7 @@ def home(request):
         'title': 'Home',
         'posts': posts,
     }
-    return render(request, 'portfolio/portfolio-temp-base.html', context)
+    return render(request, 'portfolio/portfolio-base.html', context)
 
 
 def resume(request):
