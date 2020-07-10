@@ -1,5 +1,15 @@
-{% extends "portfolio/portfolio-base.html" %}
-
-{% block content %}
-    <h1>Resume</h1>
-{% endblock content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+          <title>Portfolio - {{title}}</title>
+        {% else %}
+          <title>Portfolio</title>
+        {% endif %}
+    </head>
+    <body>
+        <embed src="{% static 'portfolio/pdf/resume.pdf' %}" width="800px" height="2100px" />
+    </body>
+</html>

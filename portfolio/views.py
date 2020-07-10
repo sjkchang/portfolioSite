@@ -1,3 +1,4 @@
+from django.http import Http404 , HttpResponse
 from django.shortcuts import render
 
 posts = [
@@ -21,24 +22,3 @@ def resume(request):
         'title': 'Resume'
     }
     return render(request, 'portfolio/portfolio-resume.html', context)
-
-
-def projects(request):
-    context = {
-        'title': 'Projects'
-    }
-    return render(request, 'portfolio/portfolio-projects.html', context)
-
-
-def contact(request):
-    context = {
-        'title': 'Contact Me'
-    }
-    return render(request, 'portfolio/portfolio-contact.html', context)
-
-
-def about(request):
-    context = {
-        'title': 'About'
-    }
-    return render(request, 'portfolio/portfolio-about.html', context)

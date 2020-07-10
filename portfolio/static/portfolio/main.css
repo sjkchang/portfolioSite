@@ -5,29 +5,30 @@
 }
 
 html, body {
+    color: white;
     overscroll-behavior: none;
-}
-
-body{
-    height: 600px;
-    background-image: url(images/code-blur.jpg);
+    height: 90vh;
     background-color: #cccccc;
+    background-image: url(images/code-blur.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
+/* Nav Bar */
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 8vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     border-bottom-color: #cccccc;
     border-bottom-style: solid;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
 
 }
 
@@ -36,12 +37,12 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 1.5rem;
+    margin-left: 3%;
 }
 
 .logo a{
     text-decoration: none;
     color: #cccccc;
-
 }
 
 .nav-links{
@@ -52,6 +53,8 @@ nav {
 
 .nav-links li{
     list-style: none;
+    padding: 2px;
+
 }
 
 .nav-links a{
@@ -62,10 +65,21 @@ nav {
     font-size: .875rem;
 }
 
+.nav-links a:hover{
+    color: #14aac4;
+}
+
+#resume-btn{
+    color: #05ab9c;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    padding: 3px 5px;
+}
+
 .burger{
+    margin-right: 3%;
     display: none;
     cursor: pointer;
-
 }
 
 .burger div {
@@ -78,6 +92,7 @@ nav {
 @media screen and (max-width: 760px) {
     body{
         overflow-x: hidden;
+
     }
     .nav-links{
         position: absolute;
@@ -87,7 +102,8 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #5d4954;
+        justify-content: flex-start;
+        background-color: #222222;
         width: 35%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
@@ -95,10 +111,23 @@ nav {
 
     .nav-links li{
         opacity: 0;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
     }
 
     .burger{
         display: block;
+    }
+
+    .intro h4{
+        font-size: 2.8vw ;
+    }
+
+    .intro h1{
+        font-size: 10vw ;
+        font-style: italic;
     }
 }
 
@@ -115,4 +144,66 @@ nav {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+/* Content */
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 16%;
+}
+
+/* intro */
+#name{
+    color: #14aac4;
+}
+
+.intro{
+    margin-bottom: 3%;
+    color: #05ab9c;
+}
+
+.intro h4{
+    font-size: 1.8vw ;
+}
+
+.intro h1{
+    font-size: 6.5vw ;
+    color: #05ab9c;
+}
+
+.intro-paragraph{
+    font-size: 1.2rem;
+}
+
+.intro-paragraph p{
+    margin-right: 20vw;
+}
+
+.spacer{
+    height: 500px;
+}
+
+.contact-me-btn{
+    margin-top: 10vh;
+}
+.contact-me-btn a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+
+}
+
+
+
+/* Footer */
+footer{
+    height: 20px;
+    background-color: red;
+}
+
+#jump{
+
 }

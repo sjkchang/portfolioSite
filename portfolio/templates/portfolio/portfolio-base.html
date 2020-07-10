@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="{% static 'portfolio/Main.css' %}" </link>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
         {% if title %}
           <title>Portfolio - {{title}}</title>
@@ -13,16 +15,18 @@
         {% endif %}
     </head>
     <body>
-        <nav>
+        <nav id="navbar">
             <div class="logo">
                 <h4><a href="{% url 'portfolio-home' %}">Home</a></h4>
             </div>
             <ul class="nav-links">
-                    <!-- Navbar Left Side -->
-                  <li><a href="{% url 'portfolio-projects' %}">Projects</a></li>
-                  <li><a href="{% url 'portfolio-resume' %}">Resume</a></li>
-                  <li><a href="{% url 'portfolio-about' %}">About</a></li>
-                  <li><a href="{% url 'portfolio-contact' %}">Contact Me</a></li>
+                <!-- Navbar Right Side -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><div>
+                    <a id="resume-btn" target="_blank" href="{% url 'portfolio-resume' %}">Resume</a></li>
+                </div>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -30,9 +34,32 @@
                 <div class="line3"></div>
             </div>
         </nav>
+        <div class="content">
+            <div class="intro">
+                <h4>Hi, my name is</h4>
+                <h1 id="name">Steven Chang<strong>.</strong></h1>
 
-        {% block content %}
-        {% endblock %}
+                <h1>I do something, this is filler space.</h1>
+            </div>
+            <div class="intro-paragraph">
+                <p> I am currently going into my third year as
+                    a student at San Jose state University, majoring
+                    in software engineering.
+                </p>
+            </div>
+            <div class="contact-me-btn">
+                <a href="mailto:sjkchang@gmail.com">Get In Contact</a>
+            </div>
+        </div>
+
+        <div class="spacer">
+
+        </div>
+        <h1>Contact Me</h1>
+        <a id="jump" href="#navbar">Email Us</a>
+        <footer>
+
+        </footer>
         <script src="{% static 'portfolio/js/app.js' %}"></script>
     </body>
 </html>
