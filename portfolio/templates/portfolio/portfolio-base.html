@@ -22,8 +22,10 @@
             <ul class="nav-links">
                 <!-- Navbar Right Side -->
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+
                 <li><div>
                     <a id="resume-btn" target="_blank" href="{% url 'portfolio-resume' %}">Resume</a></li>
                 </div>
@@ -35,31 +37,135 @@
             </div>
         </nav>
         <div class="content">
-            <div class="intro">
-                <h4>Hi, my name is</h4>
-                <h1 id="name">Steven Chang<strong>.</strong></h1>
+            <div class="intro-section">
+                <div class="intro">
+                    <h4>Hi, my name is</h4>
+                    <h1 id="name">Steven Chang<strong>.</strong></h1>
 
-                <h1>I do something, this is filler space.</h1>
+                    <h1>I do something, this is filler space.</h1>
+                </div>
+                <div class="intro-paragraph">
+                    <p> I am currently going into my third year as
+                        a student at San Jose state University, majoring
+                        in software engineering.
+                    </p>
+                </div>
+                <div class="contact-me-btn">
+                    <a href="mailto:sjkchang@gmail.com">Get In Contact</a>
+                </div>
             </div>
-            <div class="intro-paragraph">
-                <p> I am currently going into my third year as
-                    a student at San Jose state University, majoring
-                    in software engineering.
-                </p>
+            <hr class="seperator"></hr>
+            <div class="about" id="about">
+                <h1>About.</h1>
+                <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="contact-me-btn">
-                <a href="mailto:sjkchang@gmail.com">Get In Contact</a>
+            <hr class="seperator"></hr>
+            <div class="skills" id="skills">
+                <h1>Skills.</h1>
+                    <ul class=skills-list>
+                        <li>
+                            <div class="skills-elements">
+                                <ul>
+                                    <li class="first">Languages</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>SQL</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills-elements">
+                                <ul>
+                                    <li class="first">Frameworks</li>
+                                    <li>Django</li>
+                                    <li>Flask</li>
+                                    <li>JUnit</li>
+                                    <li>SQLAlchemy</li>
+                                    <li>pytest</li>
+                                    <li class="background-color">\ </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skills-elements">
+                                <ul>
+                                    <li class="first">Tools</li>
+                                    <li>UML</li>
+                                    <li>Bash</li>
+                                    <li>Git/Github</li>
+                                    <li>Unity</li>
+                                    <li>Wireframe</li>
+                                    <li>Lightroom</li>
+                                    <li>Photoshop</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            <hr class="seperator"></hr>
+            <div class="projects" id="projects">
+                <h1>Projects.</h1>
+                <ul class="projects-list">
+                    <li>
+                        <div class="">
+                            <div class="flex">
+                                <h2>Cloze</h2>
+                                <a href="https://github.com/sjkchang/vigilant-waffle" target="_blank">
+                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                                </a>
+                            </div>
+                            <p>Cloze is a small scale productivity manager web app allowing users to track meals and create to-do lists, challenges, and journals. This is a undeployed flask website developed as a group project for a software engineering class.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <div class="flex">
+                                <h2>Sorting-Visualizer</h2>
+                                <a href="https://github.com/sjkchang/Sorting-Visualizer" target="_blank">
+                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                                </a>
+                            </div>
+                            <p>A Java sorting visualizer that utilizes the Swing library. Bubble sort, Insertion sort, and Seletion sort are implemented.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <div class="flex">
+                                <h2>Starfield</h2>
+                                <a href="https://github.com/sjkchang/Starfield" target="_blank">
+                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                                </a>
+                            </div>
+                            <p>Starfield/firework particle simulator, particles move in interesting patterns</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="">
+                            <div class="flex">
+                                <h2>Chemotaxis</h2>
+                                <a href="https://github.com/sjkchang/Chemotaxis" target="_blank">
+                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                                </a>
+                            </div>
+                            <p>A simulation of organisms moving away from a starting position using a random walk</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr class="seperator"></hr>
+            <div class="contact-me" id="contact-me">
+                <h1>Contact Me.</h1>
+                <div class="contact-me-paragraph">
+                    <p>I'm currently looking for any opportunities, my inbox is open.</p>
+                </div>
             </div>
         </div>
-
-        <div class="spacer">
-
-        </div>
-        <h1>Contact Me</h1>
-        <a id="jump" href="#navbar">Email Us</a>
+        <script src="{% static 'portfolio/js/app.js' %}"></script>
         <footer>
 
         </footer>
-        <script src="{% static 'portfolio/js/app.js' %}"></script>
     </body>
 </html>

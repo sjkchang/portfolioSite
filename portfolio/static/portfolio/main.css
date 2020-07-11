@@ -7,9 +7,7 @@
 html, body {
     color: white;
     overscroll-behavior: none;
-    height: 90vh;
-    background-color: #cccccc;
-    background-image: url(images/code-blur.jpg);
+    background-color: #181d22;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,14 +16,14 @@ html, body {
 }
 
 /* Nav Bar */
-
+/*<editor-fold*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
-    border-bottom-color: #cccccc;
+    border-bottom-color: white;
     border-bottom-style: solid;
     margin-left: 2%;
     margin-right: 2%;
@@ -33,7 +31,7 @@ nav {
 }
 
 .logo{
-    color: #cccccc;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 1.5rem;
@@ -42,13 +40,13 @@ nav {
 
 .logo a{
     text-decoration: none;
-    color: #cccccc;
+    color: white;
 }
 
 .nav-links{
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 60%;
 }
 
 .nav-links li{
@@ -58,7 +56,7 @@ nav {
 }
 
 .nav-links a{
-    color: #cccccc;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 2px;
@@ -72,7 +70,7 @@ nav {
 #resume-btn{
     color: #05ab9c;
     border-radius: 5px;
-    border: 1px solid #cccccc;
+    border: 1px solid white;
     padding: 3px 5px;
 }
 
@@ -85,10 +83,13 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: #cccccc;
+    background-color: white;
     margin: 5px;
 }
+/*</editor-fold>*/
 
+/*NavBar Animation*/
+/*<editor-fold*/
 @media screen and (max-width: 760px) {
     body{
         overflow-x: hidden;
@@ -97,7 +98,7 @@ nav {
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 295vh;
         top: 8vh;
         display: flex;
         flex-direction: column;
@@ -121,12 +122,16 @@ nav {
         display: block;
     }
 
+    .intro{
+        max-height: 90vh;
+    }
+
     .intro h4{
-        font-size: 2.8vw ;
+        font-size: 2rem ;
     }
 
     .intro h1{
-        font-size: 10vw ;
+        font-size: 2.8rem ;
         font-style: italic;
     }
 }
@@ -145,6 +150,7 @@ nav {
         transform: translateX(0px);
     }
 }
+/*</editor-fold>*/
 
 /* Content */
 .content{
@@ -154,9 +160,11 @@ nav {
 }
 
 /* intro */
+/*<editor-fold*/
 #name{
     color: #14aac4;
-}
+    font-size: 3rem;
+},
 
 .intro{
     margin-bottom: 3%;
@@ -164,11 +172,10 @@ nav {
 }
 
 .intro h4{
-    font-size: 1.8vw ;
-}
+    font-size: .9rem ;
+},
 
 .intro h1{
-    font-size: 6.5vw ;
     color: #05ab9c;
 }
 
@@ -177,11 +184,7 @@ nav {
 }
 
 .intro-paragraph p{
-    margin-right: 20vw;
-}
-
-.spacer{
-    height: 500px;
+    max-width: 500px;
 }
 
 .contact-me-btn{
@@ -195,15 +198,101 @@ nav {
     padding: 10px;
 
 }
+/*</editor-fold>*/
 
+/* about */
+/*<editor-fold */
+.about{
+    margin-top: 10vh;
+}
 
+.about-paragraph{
+    margin-top: 3vh;
+}
+/*</editor-fold>*/
+
+/* skills */
+/*<editor-fold */
+.skills{
+    margin-top: 10vh;
+}
+
+.skills-list{
+    display: flex;
+    color: #14aac4;
+    list-style: none;
+    margin-top: 3vh;
+
+}
+
+.skills-elements{
+    color: #14aac4;
+    margin-right: 5vw;
+    list-style: none;
+    display: flex;
+}
+
+.skills-elements ul{
+    margin: auto;
+    list-style: none;
+    color: #05ab9c;
+}
+
+/*</editor-fold>*/
+
+/* projects */
+/*<editor-fold */
+.projects{
+    margin-top: 10vh;
+}
+
+.projects-list{
+    text-align: left;
+    list-style: none;
+    margin-top: 3vh;
+}
+/*</editor-fold>*/
+
+/* Contact Me */
+/*<editor-fold */
+.contact-me{
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.contact-me-paragraph{
+    margin-top: 3vh;
+}
+
+/*</editor-fold>*/
 
 /* Footer */
 footer{
     height: 20px;
-    background-color: red;
+    background-color: #05ab9c;
 }
 
-#jump{
+.seperator{
+    margin-top: 8vh;
+}
 
+.text-center{
+    text-align: center;
+}
+
+.first{
+    color: #14aac4;
+}
+
+.background-color{
+    color: #181d22;
+}
+
+img.resize{
+    width: 20px;
+    height: 20px;
+}
+
+.flex{
+    display: flex;
 }
