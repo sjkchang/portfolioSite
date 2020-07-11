@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
+
         {% if title %}
           <title>Portfolio - {{title}}</title>
         {% else %}
@@ -110,62 +111,69 @@
                 <h1>Projects.</h1>
                 <ul class="projects-list">
                     <li>
-                        <div class="">
-                            <div class="flex">
-                                <h2>Cloze</h2>
-                                <a href="https://github.com/sjkchang/vigilant-waffle" target="_blank">
-                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
-                                </a>
-                            </div>
+                        <div class="project">
+                            <h2>Cloze</h2>
                             <p>Cloze is a small scale productivity manager web app allowing users to track meals and create to-do lists, challenges, and journals. This is a undeployed flask website developed as a group project for a software engineering class.</p>
+                            <hr class="buffer"></hr>
+                            <a href="https://github.com/sjkchang/vigilant-waffle" target="_blank">
+                                <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                            </a>
                         </div>
                     </li>
                     <li>
-                        <div class="">
-                            <div class="flex">
-                                <h2>Sorting-Visualizer</h2>
-                                <a href="https://github.com/sjkchang/Sorting-Visualizer" target="_blank">
-                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
-                                </a>
-                            </div>
+                        <div class="project">
+                            <h2>Sorting-Visualizer</h2>
                             <p>A Java sorting visualizer that utilizes the Swing library. Bubble sort, Insertion sort, and Seletion sort are implemented.</p>
+                            <hr class="buffer"></hr>
+                            <a href="https://github.com/sjkchang/Sorting-Visualizer" target="_blank">
+                                <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                            </a>
+                            <a href="https://github.com/sjkchang/Sorting-Visualizer/blob/master/Sorting-Visualizer.jar" target="_blank">
+                                <img src="{% static 'portfolio/images/external-link-24.png' %}" class="resize" alt="">
+                            </a>
                         </div>
                     </li>
                     <li>
-                        <div class="">
-                            <div class="flex">
-                                <h2>Starfield</h2>
-                                <a href="https://github.com/sjkchang/Starfield" target="_blank">
-                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
-                                </a>
-                            </div>
+                        <div class="project">
+                            <h2>Starfield</h2>
                             <p>Starfield/firework particle simulator, particles move in interesting patterns</p>
+                            <hr class="buffer"></hr>
+                            <a href="https://github.com/sjkchang/Starfield" target="_blank">
+                                <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                            </a>
+                            <a href="https://sjkchang.github.io/Starfield/" target="_blank">
+                                <img src="{% static 'portfolio/images/external-link-24.png' %}" class="resize" alt="">
+                            </a>
                         </div>
                     </li>
                     <li>
-                        <div class="">
-                            <div class="flex">
-                                <h2>Chemotaxis</h2>
-                                <a href="https://github.com/sjkchang/Chemotaxis" target="_blank">
-                                    <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
-                                </a>
-                            </div>
+                        <div class="project">
+                            <h2>Chemotaxis</h2>
                             <p>A simulation of organisms moving away from a starting position using a random walk</p>
+                            <hr class="buffer"></hr>
+                            <a href="https://github.com/sjkchang/Chemotaxis" target="_blank">
+                                <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
+                            </a>
+                            <a href="https://sjkchang.github.io/Chemotaxis/" target="_blank">
+                                <img src="{% static 'portfolio/images/external-link-24.png' %}" class="resize" alt="">
+                            </a>
                         </div>
                     </li>
                 </ul>
             </div>
-            <hr class="seperator"></hr>
             <div class="contact-me" id="contact-me">
                 <h1>Contact Me.</h1>
                 <div class="contact-me-paragraph">
                     <p>I'm currently looking for any opportunities, my inbox is open.</p>
                 </div>
+                <div class="contact-me-btn">
+                    <a href="mailto:sjkchang@gmail.com">Get In Contact</a>
+                </div>
             </div>
         </div>
-        <script src="{% static 'portfolio/js/app.js' %}"></script>
         <footer>
 
         </footer>
+        <script src="{% static 'portfolio/js/app.js' %}"></script>
     </body>
 </html>

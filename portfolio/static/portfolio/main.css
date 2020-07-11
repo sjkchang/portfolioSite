@@ -251,6 +251,10 @@ nav {
     list-style: none;
     margin-top: 3vh;
 }
+
+.project{
+    margin-bottom: 3vh;
+}
 /*</editor-fold>*/
 
 /* Contact Me */
@@ -268,7 +272,7 @@ nav {
 
 /* Footer */
 footer{
-    height: 20px;
+    height: 10vh;
     background-color: #05ab9c;
 }
 
@@ -295,4 +299,9 @@ img.resize{
 
 .flex{
     display: flex;
+}
+
+.buffer{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
