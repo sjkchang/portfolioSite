@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 html, body {
     color: white;
     overscroll-behavior: none;
@@ -90,52 +94,6 @@ nav {
 
 /*NavBar Animation*/
 /*<editor-fold*/
-@media screen and (max-width: 760px) {
-    body{
-        overflow-x: hidden;
-
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 295vh;
-        top: 8vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: #222222;
-        width: 35%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-links li{
-        opacity: 0;
-        font-size: 3rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-
-    }
-
-    .burger{
-        display: block;
-    }
-
-    .intro{
-        max-height: 90vh;
-    }
-
-    .intro h4{
-        font-size: 2rem ;
-    }
-
-    .intro h1{
-        font-size: 2.8rem ;
-        font-style: italic;
-    }
-}
-
 .nav-active{
     transform: translateX(0%);
 }
@@ -153,11 +111,13 @@ nav {
 /*</editor-fold>*/
 
 /* Content */
+/*<editor-fold*/
 .content{
     margin-left: 10%;
     margin-top: 10%;
     margin-right: 16%;
 }
+/*</editor-fold>*/
 
 /* intro */
 /*<editor-fold*/
@@ -209,6 +169,23 @@ nav {
 .about-paragraph{
     margin-top: 3vh;
 }
+
+.about-content{
+    display: flex;
+
+}
+
+.me{
+    height: 30vh;
+    width: 30vh;
+    max-width: 300px;
+    max-height: 300px;
+
+    margin: 5vw;
+    margin-top: 0vw;
+    border-radius: 10px;
+}
+
 /*</editor-fold>*/
 
 /* skills */
@@ -271,10 +248,72 @@ nav {
 /*</editor-fold>*/
 
 /* Footer */
+/*<editor-fold>*/
 footer{
+    text-align: center;
+    color: #14aac4;
     height: 10vh;
-    background-color: #05ab9c;
+    line-height: 10vh;
+    background-color: #2b343d;
 }
+/*</editor-fold>*/
+
+/*Small Screen Size Adjustments*/
+/*<editor-fold*/
+@media screen and (max-width: 760px) {
+    body{
+        overflow-x: hidden;
+
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 295vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #222222;
+        width: 35%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li{
+        opacity: 0;
+        font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .intro{
+        max-height: 90vh;
+    }
+
+    .intro h4{
+        font-size: 2rem ;
+    }
+
+    .intro h1{
+        font-size: 2.8rem ;
+        font-style: italic;
+    }
+
+    .about-content{
+        flex-direction: column;
+    }
+
+    .me{
+        position: relative;
+        bottom: -5vw;
+    }
+}
+/*</editor-fold>*/
 
 .seperator{
     margin-top: 8vh;

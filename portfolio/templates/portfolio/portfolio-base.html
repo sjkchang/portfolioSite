@@ -22,10 +22,10 @@
             </div>
             <ul class="nav-links">
                 <!-- Navbar Right Side -->
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+                <li class="nav-element"><a href="#about">About</a></li>
+                <li class="nav-element"><a href="#skills">Skills</a></li>
+                <li class="nav-element"><a href="#projects">Projects</a></li>
+                <li class="nav-element"><a href="#contact-me">Contact Me</a></li>
 
                 <li><div>
                     <a id="resume-btn" target="_blank" href="{% url 'portfolio-resume' %}">Resume</a></li>
@@ -43,12 +43,11 @@
                     <h4>Hi, my name is</h4>
                     <h1 id="name">Steven Chang<strong>.</strong></h1>
 
-                    <h1>I do something, this is filler space.</h1>
+                    <h1>I Like Building Software.</h1>
                 </div>
                 <div class="intro-paragraph">
-                    <p> I am currently going into my third year as
-                        a student at San Jose state University, majoring
-                        in software engineering.
+                    <p>
+                        I am a software engineering student, based in the bay area.
                     </p>
                 </div>
                 <div class="contact-me-btn">
@@ -58,7 +57,25 @@
             <hr class="seperator"></hr>
             <div class="about" id="about">
                 <h1>About.</h1>
-                <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="about-content">
+                    <p class="about-paragraph">
+                        I am currently going into my third year as
+                        a student at San Jose State University, majoring
+                        in software engineering. I enjoy writing software
+                        be it a website, application, or anythong in between.
+                        <br>
+                        <br>
+                        Currently, the majority of my software engineering experience
+                        is in school work, and personal projects I build in my off time,
+                        but I hope that can change.
+                        <br>
+                        <br>
+                        When I am not programming, you will find me snowboarding, hiking,
+                        playing video games, or expanding my knowledge.
+                    </p>
+
+                    <img src="{% static 'portfolio/images/me.jpg' %}" alt="" class="me">
+                </div>
             </div>
             <hr class="seperator"></hr>
             <div class="skills" id="skills">
@@ -136,7 +153,7 @@
                     <li>
                         <div class="project">
                             <h2>Starfield</h2>
-                            <p>Starfield/firework particle simulator, particles move in interesting patterns</p>
+                            <p>Starfield/firework particle simulator, particles move in interesting patterns.</p>
                             <hr class="buffer"></hr>
                             <a href="https://github.com/sjkchang/Starfield" target="_blank">
                                 <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
@@ -149,7 +166,7 @@
                     <li>
                         <div class="project">
                             <h2>Chemotaxis</h2>
-                            <p>A simulation of organisms moving away from a starting position using a random walk</p>
+                            <p>A simulation of organisms moving away from a starting position using a random walk.</p>
                             <hr class="buffer"></hr>
                             <a href="https://github.com/sjkchang/Chemotaxis" target="_blank">
                                 <img src="{% static 'portfolio/images/GitHub-Mark-Light-32px.png' %}" class="resize" alt="">
@@ -172,7 +189,7 @@
             </div>
         </div>
         <footer>
-
+            <h4>Designed and Built by Steven Chang</h4>
         </footer>
         <script src="{% static 'portfolio/js/app.js' %}"></script>
     </body>
