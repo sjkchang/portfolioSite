@@ -28,6 +28,24 @@ DEBUG = False
 
 COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 
+ADMINS = [
+    ('Steven', 'ssearek@gmail.com'),
+    ('Admin', 'sjkchang@gmail.com'),
+    ('admin', 'sjkchang@gmail.com'),
+    ('admin', 'sjkchang@protonmail.com'),
+]
+
+EMAIL_HOST = 'localhost'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sjkchang@gmail.com'
+EMAIL_HOST_PASSWORD = '55W27rA4'
+EMAIL_PORT = 587
+EMAIL_USE_SSL = False
+SEND_BROKEN_LINK_EMAILS = True
+
+
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
@@ -139,5 +157,4 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-
 django_heroku.settings(locals())
