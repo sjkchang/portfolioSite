@@ -92,23 +92,7 @@ nav {
 }
 /*</editor-fold>*/
 
-/*NavBar Animation*/
-/*<editor-fold*/
-.nav-active{
-    transform: translateX(0%);
-}
 
-@keyframes navLinkFade{
-    from{
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-/*</editor-fold>*/
 
 /* Content */
 /*<editor-fold*/
@@ -313,6 +297,25 @@ footer{
         bottom: -5vw;
     }
 }
+
+/*NavBar Animation*/
+/*<editor-fold*/
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+/*</editor-fold>*/
+
 /*</editor-fold>*/
 
 .seperator{
